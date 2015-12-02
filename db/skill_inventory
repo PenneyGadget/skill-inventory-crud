@@ -13,4 +13,8 @@ skills:
 - id: 4
   title: Sucking at Programming
   description: Penney is **REALLY** good at this one.
-total: 4
+- id: 5
+  title: Yarn
+  description: Penney is good at making yarn into rad things like hats and cup cozies
+    and ill-fitted sweaters.
+total: 5

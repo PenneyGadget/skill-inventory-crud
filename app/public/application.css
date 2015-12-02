@@ -1,5 +1,6 @@
 body {
   text-align: center;
+  background-image: url('/images/stardust/stardust.png')
 }
 
 h1 {
@@ -10,10 +11,21 @@ h1 {
   width: 100%;
   text-align: center;
   font-family: "Amatic SC", monospace;
+  font-size: 48px;
 }
 
-ul, h3, form, p {
+ul, form, p {
   font-family: "Amatic SC", monospace;
   font-weight: bold;
   font-size: 24px;
+}
+
+h3 {
+  font-family: "Amatic SC", monospace;
+  font-weight: bold;
+  font-size: 44px;
+}
+
+.dashboard {
+  
 }

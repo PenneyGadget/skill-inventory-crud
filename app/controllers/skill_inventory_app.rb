@@ -31,16 +31,19 @@ class SkillInventoryApp < Sinatra::Base
     erb :show
   end
 
+  # form to edit
   get '/skills/:id/edit' do |id|
     @skill = SkillInventory.find(id.to_i)
     erb :edit
   end
 
+  # update task
   put '/skills/:id' do |id|
     SkillInventory.update(id.to_i, params[:skill])
     redirect "/skills/#{id}"
   end
 
+  # delete
   delete '/skills/:id' do |id|
     SkillInventory.delete(id.to_i)
     redirect '/skills'
