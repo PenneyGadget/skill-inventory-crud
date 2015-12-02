@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 <head>
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+  <link rel='stylesheet' href='/css/bootstrap.css'>
   <link rel="stylesheet" href="/application.css">
   <title>Skill Inventory</title>
 </head>
 <body>
-  <%= yield %>
+  <header>
+  <nav>
+  <ul class='nav nav-tabs'>
+    <li role='presentation' class='active'><a href='/'>Home</a></li>
+    <li role='presentation'><a href='/skills'>Skillz!</a></li>
+    <li role='presentation'><a href='/skills/new'>New Skill!</a></li>
+  </ul>
+  </nav>
+  </header>
+  <div class='container'>
+    <%= yield %>
+  </div>
 </body>
 </html>

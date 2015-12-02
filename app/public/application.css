@@ -1,0 +1,19 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  background-color: black;
+  opacity: .5;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: "Amatic SC", monospace;
+}
+
+ul, h3, form, p {
+  font-family: "Amatic SC", monospace;
+  font-weight: bold;
+  font-size: 24px;
+}
