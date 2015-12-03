@@ -23,9 +23,18 @@ ul, form, p {
 h3 {
   font-family: "Amatic SC", monospace;
   font-weight: bold;
-  font-size: 44px;
+  font-size: 48px;
 }
 
-.dashboard {
-  
+#edit, #delete {
+  font-family: "Amatic SC", monospace;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#description, #new {
+  font-family: "Amatic SC", monospace;
+  font-size: 32px;
+  color: white;
+  opacity: .5;
 }

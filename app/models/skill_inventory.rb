@@ -1,8 +1,13 @@
 require 'yaml/store'
 
 class SkillInventory
+
   def self.database
-    @database ||= YAML::Store.new("db/skill_inventory")
+    if ENV["RACK_ENV"] == 'test'
+      @database ||= YAML::Store.new("db/skill_inventory_test")
+    else
+      @database ||= YAML::Store.new("db/skill_inventory")
+    end
   end
 
   def self.create(skill)
@@ -52,5 +57,5 @@ class SkillInventory
       database['total'] = 0
     end
   end
-  
+
 end
