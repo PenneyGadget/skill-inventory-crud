@@ -1,20 +1,3 @@
 ---
-skills:
-- id: 1
-  title: Food
-  description: Penney is good at cooking the foodstuffs. Especially allergen-free
-    and Paleo yummies.
-- id: 2
-  title: Rock
-  description: Penney is pretty good at climbing rocks, both plastic and mineral.
-- id: 3
-  title: Sleep
-  description: Penney is really really really good at sleeping.
-- id: 4
-  title: Sucking at Programming
-  description: Penney is **REALLY** good at this one.
-- id: 5
-  title: Yarn
-  description: Penney is good at making yarn into rad things like hats and cup cozies
-    and ill-fitted sweaters.
-total: 5
+skills: []
+total: 0
