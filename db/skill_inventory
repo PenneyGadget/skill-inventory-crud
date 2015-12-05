@@ -32,4 +32,7 @@ skills:
 - id: 10
   title: Paintng
   description: Penney can move colors around with a brush and make them look semi-not-sucky!
-total: 10
+- id: 11
+  title: Eyerolling
+  description: Mastered.
+total: 11

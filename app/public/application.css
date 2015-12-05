@@ -3,6 +3,12 @@ body {
   background-image: url('/images/stardust/stardust.png')
 }
 
+#dashboard {
+  font-family: "Amatic SC", monospace;
+  font-weight: bold;
+  font-size: 36px;
+}
+
 h1 {
   color: white;
   background-color: black;
@@ -14,7 +20,7 @@ h1 {
   font-size: 48px;
 }
 
-ul, form, p {
+ul, form {
   font-family: "Amatic SC", monospace;
   font-weight: bold;
   font-size: 24px;
@@ -32,9 +38,22 @@ h3 {
   font-size: 24px;
 }
 
-#description, #new {
+#description {
   font-family: "Amatic SC", monospace;
   font-size: 32px;
   color: white;
   opacity: .5;
+}
+
+#new {
+  font-family: "Amatic SC", monospace;
+  font-size: 24px;
+  color: white;
+  opacity: .5;
+}
+
+#intro {
+  border-style: dotted;
+  padding: 20px;
+  border-color: rgb(204, 204, 204);
 }

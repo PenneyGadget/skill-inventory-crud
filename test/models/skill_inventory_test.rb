@@ -10,39 +10,40 @@ class SkillInventoryTest < Minitest::Test
 
   def test_a_skill_is_created
     create_skills(1)
-    skill = SkillInventory.find(1)
+    skill = SkillInventory.all.last
 
     assert_equal "a title 1", skill.title
     assert_equal "a description 1", skill.description
-    assert_equal 1, skill.id
+    assert_equal SkillInventory.all.first.id, skill.id
   end
 
   def test_all_method_collects_all_our_skills
-    create_skills(3)
+    create_skills(2)
     skills = SkillInventory.all
-    skill1, skill2, skill3 = skills[0], skills[1], skills[2]
+    skill1, skill2 = skills[0], skills[1]
 
-    assert_equal 3, skills.length
+    assert_equal 2, skills.length
     assert_equal "a title 1", skill1.title
-    assert_equal 2, skill2.id
-    assert_equal "a description 3", skill3.description
+    assert_equal "a description 2", skill2.description
   end
 
   def test_find_method_finds_our_skills_and_their_details
     create_skills(3)
-    skill = SkillInventory.find(2)
+    id = SkillInventory.all.last.id
+    skill = SkillInventory.find(id)
 
-    assert_equal "a title 2", skill.title
-    assert_equal 2, skill.id
-    assert_equal "a description 2", skill.description
+    assert_equal "a title 3", skill.title
+    assert_equal 3, SkillInventory.all.length
+    assert_equal "a description 3", skill.description
     assert_equal Skill, skill.class
   end
 
   def test_update_method_updates_skills_correctly
     SkillInventory.create(:title => "words", :description => "using them")
+    id = SkillInventory.all.last.id
 
-    SkillInventory.update(1, {:title => "words", :description => "using them real good"})
-    updated = SkillInventory.find(1)
+    SkillInventory.update(id, {:title => "words", :description => "using them real good"})
+    updated = SkillInventory.find(id)
 
     assert_equal "using them real good", updated.description
   end
@@ -53,7 +54,8 @@ class SkillInventoryTest < Minitest::Test
 
     assert_equal 3, skills_before.length
 
-    SkillInventory.delete(3)
+    id = SkillInventory.all.last.id
+    SkillInventory.delete(id)
     skills_after = SkillInventory.all
 
     assert_equal 2, skills_after.length
