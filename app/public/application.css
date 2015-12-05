@@ -6,7 +6,7 @@ body {
 #dashboard {
   font-family: "Amatic SC", monospace;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 48px;
 }
 
 h1 {
@@ -52,8 +52,19 @@ h3 {
   opacity: .5;
 }
 
-#intro {
+#skillz {
   border-style: dotted;
   padding: 20px;
   border-color: rgb(204, 204, 204);
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#mad-skillz, #new-skill {
+  margin-top: 50px;
+  border-style: dotted;
+  padding: 20px;
+  border-color: rgb(204, 204, 204);
+  display: inline-block;
+  margin-bottom: 30px;
 }
