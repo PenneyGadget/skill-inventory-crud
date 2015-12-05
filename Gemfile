@@ -8,4 +8,5 @@ gem 'launchy'
 gem 'pry'
 gem 'sequel'
 gem 'sqlite3'
-gem "database_cleaner"
+gem 'database_cleaner'
+gem 'haml'
