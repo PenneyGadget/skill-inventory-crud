@@ -1,0 +1,19 @@
+-# <h1><%= @skill.title %></h1>
+-#
+-# <p id="description">
+-#   <%= @skill.description %>
+-# </p>
+-#
+-# <img src="https://robohash.org/<%= @skill.title %>.png"><br/><br/>
+-#
+-# <p id="description"><%= @skill.title %>-bot</p>
+
+%h1= @skill.title
+%p#description
+  = @skill.description
+%img{:src => "https://robohash.org/#{@skill.title}.png"}
+  %br/
+  %br/
+  %p#description
+    = @skill.title
+    \-bot

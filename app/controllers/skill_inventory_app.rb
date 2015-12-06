@@ -1,18 +1,18 @@
 class SkillInventoryApp < Sinatra::Base
 
   get '/' do
-    erb :dashboard
+    haml :dashboard
   end
 
   # see all
   get '/skills' do
     @skills = SkillInventory.all
-    erb :index
+    haml :index
   end
 
   # form to create new
   get '/skills/new' do
-    erb :new
+    haml :new
   end
 
   # submit new
@@ -24,13 +24,13 @@ class SkillInventoryApp < Sinatra::Base
   # see one
   get '/skills/:id' do |id|
     @skill = SkillInventory.find(id.to_i)
-    erb :show
+    haml :show
   end
 
   # form to edit
   get '/skills/:id/edit' do |id|
     @skill = SkillInventory.find(id.to_i)
-    erb :edit
+    haml :edit
   end
 
   # update task
@@ -46,7 +46,7 @@ class SkillInventoryApp < Sinatra::Base
   end
 
   not_found do
-    erb :error
+    haml :error
   end
 
 end
