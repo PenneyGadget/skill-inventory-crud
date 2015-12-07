@@ -1,0 +1,38 @@
+---
+skills:
+- id: 1
+  title: Food
+  description: Penney is good at making foodstuffs, especially allergen-free and paleo
+    yummies.
+- id: 2
+  title: Rock
+  description: Penney is pretty good at climbing both plastic and mineral rock objects.
+- id: 3
+  title: Sleeping
+  description: Penney is really good at this.
+- id: 4
+  title: Yarn
+  description: Penney is proficient at scrambling yarn into things like hats, cup
+    cozies, and ill-fitting sweaters.
+- id: 5
+  title: Sucking at programming
+  description: Penney is *really* good at this one...
+- id: 6
+  title: Coffee
+  description: Penney is way good at drinking it.
+- id: 7
+  title: Bicycle
+  description: I can ride one!
+- id: 8
+  title: Comparing oneself to others and then feeling bad
+  description: So good at this.
+- id: 9
+  title: Wine
+  description: Even better at drinking this than coffee!
+- id: 10
+  title: Paintng
+  description: Penney can move colors around with a brush and make them look semi-not-sucky!
+- id: 11
+  title: Eyerolling
+  description: Mastered.
+total: 11

@@ -1,0 +1,18 @@
+-# <h1>What is Penney's new sweet skill?</h1>
+-#
+-# <form action="/skills" method="post">
+-#   <p id="new">Add a sweet title and a rad description here:</p>
+-#   <input type="text" name="skill[title]"><br/><br/>
+-#   <textarea name="skill[description]"></textarea><br/>
+-#   <input type="submit" value="Submit"/>
+-# </form
+
+%h1 What is Penney's new sweet skill?
+%form{:action => "/skills", :method => "post"}
+  %p#new Add a sweet title and a rad description here:
+  %input{:name => "skill[title]", :type => "text"}
+    %br/
+    %br/
+    %textarea{:name => "skill[description]"}
+    %br/
+    %input{:type => "submit", :value => "Submit"}/

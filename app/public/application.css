@@ -1,0 +1,70 @@
+body {
+  text-align: center;
+  background-image: url('/images/stardust/stardust.png')
+}
+
+#dashboard {
+  font-family: "Amatic SC", monospace;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+h1 {
+  color: white;
+  background-color: black;
+  opacity: .5;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: "Amatic SC", monospace;
+  font-size: 48px;
+}
+
+ul, form {
+  font-family: "Amatic SC", monospace;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+h3 {
+  font-family: "Amatic SC", monospace;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+#edit, #delete {
+  font-family: "Amatic SC", monospace;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#description {
+  font-family: "Amatic SC", monospace;
+  font-size: 32px;
+  color: white;
+  opacity: .5;
+}
+
+#new {
+  font-family: "Amatic SC", monospace;
+  font-size: 24px;
+  color: white;
+  opacity: .5;
+}
+
+#skillz {
+  border-style: dotted;
+  padding: 20px;
+  border-color: rgb(204, 204, 204);
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#mad-skillz, #new-skill {
+  margin-top: 50px;
+  border-style: dotted;
+  padding: 20px;
+  border-color: rgb(204, 204, 204);
+  display: inline-block;
+  margin-bottom: 30px;
+}
